@@ -1,4 +1,3 @@
--- Start fresh so the script can be re-run
 DROP TABLE IF EXISTS students;
 
 -- Students table (SERIAL gives an auto-incrementing id)
@@ -12,6 +11,6 @@ CREATE TABLE students (
 
 -- Initial data
 INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
-('John', 'Doe', 'john.doe@example.com', '2023-09-01'),
-('Jane', 'Smith', 'jane.smith@example.com', '2023-09-01'),
-('Jim', 'Beam', 'jim.beam@example.com', '2023-09-02');
+('Manit', 'Singh', 'manit.singh@mail.com', '2026-09-01'),
+('Matt', 'Smith', 'matt.smith@mail.com', '2026-09-01'),
+('Bill', 'Xie-li', 'billy.xl@mail.com', '2026-09-02');
