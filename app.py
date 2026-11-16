@@ -43,7 +43,7 @@ def get_all_students(conn):
 
 
 def add_student(conn, first_name, last_name, email, enrollment_date):
-    # Insert a new student; %s placeholders keep user input out of the SQL text
+    # Insert a new student, %s placeholders keep user input out of the SQL text
     try:
         with conn.cursor() as cur:
             cur.execute(
@@ -103,7 +103,7 @@ def delete_student(conn, student_id):
 
 
 def ask_required(prompt):
-    # Keep asking untill the user types something (name and email are NOT NULL)
+    # Keep asking untill the user typesd something
     while True:
         value = input(prompt).strip()
         if value:
@@ -112,7 +112,7 @@ def ask_required(prompt):
 
 
 def ask_id(prompt):
-    # Return the id as an int, or None if it is not a number
+    # Return the id as an int or None if it is not a number
     value = input(prompt).strip()
     if not value.isdigit():
         print("Error: student id must be a whole number.")
@@ -121,7 +121,7 @@ def ask_id(prompt):
 
 
 def ask_date(prompt):
-    # Blank means no date; otherwise it must be YYYY-MM-DD
+    # Blank means no date, otherwise it must be YYYY-MM-DD
     while True:
         value = input(prompt).strip()
         if not value:

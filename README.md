@@ -81,4 +81,4 @@ database connection. Each successful change is committed; failed ones are rolled
 
 ## Demo video
 
-Video link: 
+Video link: https://youtu.be/2OjLp6pb2hU
